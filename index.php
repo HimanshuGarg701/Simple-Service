@@ -5,6 +5,9 @@
     <title></title>
   </head>
   <body>
+    <?php
+        echo "Hello from php";
+     ?>
 
   </body>
 </html>
