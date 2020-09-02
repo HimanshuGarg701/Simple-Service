@@ -72,6 +72,50 @@
           echo "Name of Animal is".$animals[$j]."<br>";
         }
 
+        echo "<br>WORKING WITH CLASS<br>";
+
+        class Person
+        {
+          private $name;
+          private $age;
+          private $hobby;
+
+          function __construct($givenName, $givenAge, $givenHobby)
+          {
+            $this->name = $givenName;
+            $this->age = $givenAge;
+            $this->hobby = $givenHobby;
+          }
+
+          function getAge(){
+            return $this->age;
+          }
+
+          function setAge($newAge){
+            $this->age = $newAge;
+          }
+
+          function getName(){
+            return $this->name;
+          }
+
+          function setName($newName){
+            $this->name->$newName;
+          }
+
+          function getHobby(){
+            return $this->hobby;
+          }
+
+          function setHobby($newHobby){
+            $this->hobby = $newHobby;
+          }
+        }
+
+        $person = new Person("John", 26, "Reading");
+        echo $person->getName()." is ".$person->getAge()." and likes ".$person->getHobby();
+
+        
 
      ?>
 
