@@ -56,7 +56,23 @@
         }
 
         echo "PASSING PARAMETER TO FUNCTION<br>";
-        echo "Cube of 5 is ".findCube(5)."<br>";
+        echo "Cube of 5 is ".findCube(5)."<br><br>";
+
+        //LOOPS
+        echo "WORKING WITH WHILE LOOPS<br>";
+        $i=0;
+        while($i<10){
+          echo "Value of i is $i<br>";
+          $i++;
+        }
+
+        echo "<br>WORKING WITH FOR LOOPS<br>";
+        $animals = array("rat","cat","bat","dog","tiger");
+        for($j=0; $j<count($animals); $j++){
+          echo "Name of Animal is".$animals[$j]."<br>";
+        }
+
+
      ?>
 
   </body>
