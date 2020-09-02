@@ -42,14 +42,21 @@
         $num1 = 5;
         $num2 = 10;
 
-        echo "WORKING WITH IF-ELSE<br>"
+        echo "WORKING WITH IF-ELSE<br>";
         if($num1==$num2){
           echo "Numbers are equal<br>";
         }elseif($num1>$num2){
           echo "Num1 is greater<br>";
         }else{
-          echo "Num2 is greater than num1<br>";
+          echo "Num2 is greater than num1<br><br>";
         }
+
+        function findCube($num){
+          return $num*$num*$num;
+        }
+
+        echo "PASSING PARAMETER TO FUNCTION<br>";
+        echo "Cube of 5 is ".findCube(5)."<br>";
      ?>
 
   </body>
