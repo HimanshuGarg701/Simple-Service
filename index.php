@@ -37,6 +37,19 @@
         //Simple function call to hey()
         echo "TESTING FUNCTION <br />";
         hey();
+
+
+        $num1 = 5;
+        $num2 = 10;
+
+        echo "WORKING WITH IF-ELSE<br>"
+        if($num1==$num2){
+          echo "Numbers are equal<br>";
+        }elseif($num1>$num2){
+          echo "Num1 is greater<br>";
+        }else{
+          echo "Num2 is greater than num1<br>";
+        }
      ?>
 
   </body>
