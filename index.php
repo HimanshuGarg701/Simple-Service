@@ -113,10 +113,34 @@
         }
 
         $person = new Person("John", 26, "Reading");
-        echo $person->getName()." is ".$person->getAge()." and likes ".$person->getHobby();
+        echo $person->getName()." is ".$person->getAge()." and likes ".$person->getHobby()."<br><br>";
 
-        
+        echo "WORKING WITH INHERITANCE<br>";
+        class Child extends Person{
+          private $lovesToPlay;
 
+          function __construct($givenName, $givenAge, $givenHobby, $getLovesToPlay){
+            parent::__construct($givenName, $givenAge, $givenHobby);
+            $this->lovesToPlay = $getLovesToPlay;
+
+          }
+
+          function getLovesToPlay(){
+            return $this->lovesToPlay;
+          }
+
+          function setLovesToPlay($givenLovesToPlay){
+            $this->lovesToPlay = $givenLovesToPlay;
+            if($this->lovesToPlay==true){
+              return "true";
+            }
+            return "false";
+          }
+
+        }
+
+        $childran = new Child("Jose", 8, "Soccer", true);
+        echo "".$childran->getName()." is ".$childran->getAge()." years old and loves ".$childran->getHobby()."Is it right to say that child loves to play?".$childran->getLovesToPlay();
      ?>
 
   </body>
